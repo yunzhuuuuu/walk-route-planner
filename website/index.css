@@ -1,0 +1,13 @@
+.hello {
+    color: green;
+    font-size: 10px;
+}
+
+.main-content {
+    border: 2px solid red;
+}
+
+.footer {
+    border: 2px solid green;
+}
+
