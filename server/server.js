@@ -5,13 +5,13 @@ const fs = require("fs");
 const app = express();
 const port = 3586;
 
-app.use(express.json())
+app.use(express.json());
 
-db = {}
+db = {};
 
 fs.readFile("./data.json", 'utf8', (err, data) => {
     if (err) {
-        console.log(err);
+        console.error(err);
         return;
     }
 
@@ -29,10 +29,10 @@ app.listen(port, () => {
     console.log(`HI IM ON PORT ${port}`);
 });
 
-process.on('SIGINT', function() {
+process.on('SIGINT', () => {
     console.log("goodbye!");
     fs.writeFile('./data.json', JSON.stringify(db), (err) => {
-        console.log("hey...not working uwu");
+        console.error("hey...not working uwu", err);
     });
     process.exit(0);
-})
+});
