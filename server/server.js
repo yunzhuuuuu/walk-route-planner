@@ -1,11 +1,13 @@
 
 const express = require("express");
 const fs = require("node:fs");
+const cors = require("cors");
 
 const app = express();
 const port = 3586;
 
 app.use(express.json());
+app.options("*", cors());
 
 let db = {"user_0": "hi"};
 
