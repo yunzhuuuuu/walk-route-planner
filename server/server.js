@@ -7,7 +7,7 @@ const port = 3586;
 
 app.use(express.json());
 
-db = {};
+db = {"user_0": "hi"};
 
 fs.readFile("./data.json", 'utf8', (err, data) => {
     if (err) {
