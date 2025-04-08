@@ -177,6 +177,8 @@ function q6_option2() {
 }
 
 function feedback_submit(element) {
+    event.preventDefault();
+    punctuations = `"#$%&'()*+,-./:;<=>?@[\]^_\`{|}~ `.split("");
     if (event.key === 'Enter') {
         let user = JSON.parse(window.sessionStorage.getItem("user_data"));
         user.feedback = element.value;
@@ -192,6 +194,15 @@ function feedback_submit(element) {
         }).catch((err) => {
             console.error(err);
         });
+        element.parentNode.style.display = "none";
         setTimeout(() => {console.log("heyyy")}, 2000);
+    } else {
+      if ((event.keyCode >= 48 && event.keyCode <= 57) ||
+       (event.keyCode >= 65 && event.keyCode <= 90) ||
+        (event.keyCode >= 97 && event.keyCode <= 122) ||
+         (punctuations.includes(event.key))) {
+      element.value += event.key;
     }
+    if (event.key == 'Backspace') element.value = element.value.slice(0, element.value.length - 1);
+  }
 }
