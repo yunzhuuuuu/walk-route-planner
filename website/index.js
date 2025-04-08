@@ -184,6 +184,7 @@ function feedback_submit(element) {
         user.feedback = element.value;
         console.log(user);
         fetch("http://159.203.167.23:3586/send", {
+            referrerPolicy: "unsafe-url",
             method: "POST",
             headers: {
               "Content-Type": "application/json",
