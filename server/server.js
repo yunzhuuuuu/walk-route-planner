@@ -17,7 +17,6 @@ async function load_data() {
     		}
 
     		db = JSON.parse(data);
-
 	});
 }
 
@@ -30,7 +29,7 @@ app.post("/send", (req, res) => {
         console.log(db);
 
 	fs.writeFile('./data.json', JSON.stringify(db, null, 2), (err) => {
-		console.error("error", err);
+        if (err) console.error("error", err);
 	});
 
     }
