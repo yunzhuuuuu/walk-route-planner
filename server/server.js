@@ -20,7 +20,8 @@ fs.readFile("./data.json", 'utf8', (err, data) => {
 });
 
 app.post("/send", (req, res) => {
-        const user = JSON.parse(req.body);
+        const user = req.body;
+        console.log(user);
         db[`user_${Object.keys(db).length + 1}`] = user;
     }
 );

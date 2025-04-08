@@ -130,7 +130,7 @@ function q6_option2() {
 async function feedback_submit(element) {
     if (event.key === 'Enter') {
         user.feedback = element.value;
-        const send = await fetch("https://example.org/post", {
+        const send = await fetch("http://159.203.167.23:3586/send", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
