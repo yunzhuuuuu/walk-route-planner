@@ -3,7 +3,7 @@ const send = fetch("http://159.203.167.23:3586/send", {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({"aaaaaaa": 1}),
+    body: JSON.stringify({"bbbbbb": 1}),
 });
 
 console.log("send");

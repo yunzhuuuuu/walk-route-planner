@@ -23,6 +23,7 @@ app.post("/send", (req, res) => {
         const user = req.body;
         console.log(user);
         db[`user_${Object.keys(db).length + 1}`] = user;
+        console.log(db);
     }
 );
 
