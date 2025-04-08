@@ -8,15 +8,21 @@
     gap: 5vh;
 }
 
+
 .paragraph{
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
+    background-color: white;
+    opacity: 70%;
+    padding: 6px 12px; 
+    border-radius: 6px; 
 }
 
 .start-button{
-    background-color: #d2e3ff; 
+    background-color: #fefdc5; 
+    opacity: 90%;
     border: black;
     padding: 6px 12px; 
     font-size: 20px; 
@@ -49,7 +55,7 @@ body{
 }
 
 .driver-option{
-    background-color: #d2e3ff; 
+    background-color: white; 
     border: black;
     padding: 1.5% 3%; 
     font-size: 25px; 
@@ -70,10 +76,11 @@ body{
     margin-right: 5%;
     display: flex;
     flex-direction: column;
+    font-family: roboto;
 }
 
 .question-index{
-    background-color: rgb(223, 217, 217);
+    background-color: white;
     padding: 12px 20px; 
     border-radius: 8px;
     width: fit-content;
@@ -87,11 +94,12 @@ body{
 }
 
 .button {
-    background-color: #d2e3ff; 
+    background-color: white; 
     border: black;
     padding: 6px 12px; 
     font-size: 20px; 
     border-radius: 6px;
+    font-family: roboto;
 }
 
 .left, .right{

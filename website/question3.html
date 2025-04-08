@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <meta charset="utf-8" />
         <link href="index.css" rel="stylesheet"/>
         <script src="index.js" defer></script>
-        <title>Question 3</title>
+        <title>Round 3</title>
     </head>
     <body>
         <main class="main-content">
-            <h3>Question 3/3</h3>
-            <h1 class="Instruction">Choose the road you prefer: </h1>
-            <img src="images/q3_o1.png" alt="q3_o1" width="300" height="500"/>
-            <img src="images/q3_o2.png" alt="q3_o2" width="300" height="500"/>
-            <button onclick="q3_option1()">Option 1</button>
-            <button onclick="q3_option2()">Option 2</button>
+            <div class="question">
+                <h3 class="question-index">Round 3/6</h3>
+                <h1 class="instruction">Choose the road you prefer: </h1>
+            </div>
+            <div class="option">
+                <div class="left">
+                    <img src="images/5.png" alt="5" width="300" height="400"/>
+                    <button onclick="q3_option1()" class="button">Route A</button>
+                </div>
+                <div class="right">
+                    <img src="images/6.png" alt="6" width="300" height="400"/>
+                    <button onclick="q3_option2()" class="button">Route B</button>
+                </div>
+            </div>
         </main>
     </body>
 </html>
