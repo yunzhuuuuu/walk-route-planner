@@ -127,6 +127,13 @@ function q6_option2() {
     user.question_8[1] = 1;
 }
 
+
+// Pre-order
+function end_page() {
+  window.location.href = 'end_page.html';
+}
+
+
 async function feedback_submit(element) {
     if (event.key === 'Enter') {
         user.feedback = element.value;

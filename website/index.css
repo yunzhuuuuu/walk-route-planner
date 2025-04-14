@@ -9,6 +9,11 @@
 }
 
 
+.title{
+    color: hsl(55, 100%, 86%);
+}
+
+
 .paragraph{
     margin-left: 10%;
     margin-right: 10%;
@@ -21,12 +26,12 @@
 }
 
 .start-button{
-    background-color: #fefdc5; 
+    background-color: hsl(55, 100%, 86%); 
     opacity: 90%;
     border: black;
     padding: 6px 12px; 
     font-size: 20px; 
-    border-radius: 6px;  
+    border-radius: 20px;
 }
 
 body{
