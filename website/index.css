@@ -8,8 +8,11 @@
     gap: 5vh;
 }
 
-
 .title{
+    color: hsl(55, 100%, 86%);
+}
+
+.text{
     color: hsl(55, 100%, 86%);
 }
 
